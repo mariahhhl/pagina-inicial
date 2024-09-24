@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+body{
+ background-color: #A70400;
+  margin:0;
+  padding:0;
+  transition: background-image 0.3s linear;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position: center;
+  background-size: cover;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+  padding: 10px; 
+  color: #D90600;
+  margin-bottom: 40px;
+}
+
+.logo img{
+  width: 170px;
+  height: auto;
+}
+
+header a{
+  text-decoration: none;
+  color: white;
+}
+
+.menu{
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.pesquisa{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 10px
+}
+
+.pesquisa input{
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+  box-shadow:1px 1px 10px #FFA6A4;
+}
+
+.pesquisa input:hover{
+  border-color:#FF7470;
+}
+
+.pesquisa button{
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: #D90600;
+  color: white;
+  transition:background-color 0.3s;
+  box-shadow:1px 1px 10px #FFA6A4;
+ }
+
+.pesquisa button:hover{
+  background-color:red;
+}
+
+.secoes{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.secao{
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+
+.secao img{
+  position:relative; 
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 8px 8px 18px black;
+}
+
+.secao:hover{
+  transform: scale(0.9)
+}
+
+.secao span{
+  position: absolute;
+  bottom: 50%;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 17px;
+  font-family: "Rye", serif;
+   }
+
+.seta{
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+}
+
+.lista-produtos{
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.produto{
+  min-width: 200px; 
+  margin: 0 10px; 
+  padding: 10px;
+  background-color: #f4f4f4;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px; 
+  display: grid;
+}
+
+.produto img{
+  width:200px;
+  height: 150px;
+  object-fit: cover;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.produtos{
+  display: flex;
+  align-items: center;
+}
